@@ -17,11 +17,11 @@ CoT is a unified self-attention building block, and acts as an alternative to st
 
 ### Clone the repository:
 ```
-git clone https://github.com/JDAI-CV/CoTNet.git
+git clone https://github.com/JDAI-CV/CoTNet-ObjectDetection-InstanceSegmentation.git
 ```
 
 ### Train 
-First, download the [COCO](https://cocodataset.org/#home) dataset. To train CoTNet-50 on a single node with 8 gpus:
+First, download the [COCO](https://cocodataset.org/#home) dataset. Then copy the code into detectron2 and build detectron2. To train CoTNet-50 on a single node with 8 gpus:
 ```
 python3 tools/train_net.py --num-gpus 8 --config-file configs/ObjectDetection/Faster-RCNN/CoTNet-50/faster_rcnn_CoT_50_FPN_1x.yaml
 ```
